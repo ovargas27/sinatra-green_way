@@ -86,9 +86,9 @@ Now you can visit it on "localhost:4567/" in your browser
 Congrats for you first Sinatra application in the green way.
 
 # References
-[Cucumber](http://cukes.info/) .
+[Cucumber](http://cukes.info/) Behavior Driven Development tool.
 
-[Siantra](http://www.sinatrarb.com/) .
+[Siantra](http://www.sinatrarb.com/) a DSL for quickly creating web applications in Ruby.
 
-[Cucumber-Sinatra](https://github.com/bernd/cucumber-sinatra) .
+[Cucumber-Sinatra](https://github.com/bernd/cucumber-sinatra) helpful gem to initialize a cucumber environment for a sinatra application.
 
