@@ -1,90 +1,83 @@
 # Sinatra: green way.
 
-Sinatra is one of the most popular micro frameworks for ruby, its a easy and quickly way to create web applications.
+Sinatra is one of the most popular micro frameworks for Ruby, it’s an easy and fast way to create web applications.
 
-Cucumber is an powerful tool to create user stories and acceptance tests
+On the other side, Cucumber is a powerful tool to create user stories and acceptance tests. Together they are a quickly and efficient way to create web applications.
 
-Together they are an quickly and efficient way to create web applications.
-
-In this post we'll create our first sinatra application in 'outside-in' development with cucumber, I mean, in the green way.
+In this post we'll create our first Sinatra application using 'outside-in' development with Cucumber, I mean, we’ll do it the green way.
 
 ## First Sinatra application.
 
-First of all we need to create an our basic environment.
-I like use one gemset per project 
-Then we need create the application's directory called greenway. Navigate to that
-directory and create a file called Gemfile. Edit this file so its looks like
-the example below:
+First of we need to create our basic environment. I like to use one gemset per project
 
-    source 'http://rubygems.org'
+Then we need create our application's directory, we’ll call it greenway. Inside the "greenway" directory create a file called Gemfile. Edit this file so it looks like the example below:
+
+        source 'http://rubygems.org'
     
-    gem 'sinatra'
-    gem 'cucumber'
-    gem 'cucumber-sinatra'
-    gem 'capybara'
-    gem 'rspec'
+        gem 'sinatra'
+        gem 'cucumber'
+        gem 'cucumber-sinatra'
+        gem 'capybara'
+        gem 'rspec'
 
 > With rvm you can use diferents rubies and gemset for each project. If you don't know rvm. What are you waiting for? [RVM](http://rvm.beginrescueend.com/)
+> For more info on gemsets and RVM check out this posts: [started with rvm](http://blog.crowdint.com/2010/07/28/getting-started-with-rvm.html) [Use project specific Ruby version](http://blog.crowdint.com/2010/08/17/use-a-project-specific-ruby-version-rvm.html)
 
-Now we can install our gems
-    bundle install
+Now we can install our gems, with this command
+      $ bundle install
 
-> if you doesn't have installed bundle. Install it with
-    gem install bundler
+> If you haven’t installed Bundler, you can do it with:
+      $ gem install bundler
 
-Now we need to create our sinatra application, configure cucumber, define the web_steps and so on. Well go ahead
+Now we need to create our Sinatra application, set the configuration for Cucumber, define the web steps and so on. To start we have to install the cucumber-sinatra gem, it does most of the configuration work for us. For more info you can visit [cucumber-sinatra](https://github.com/bernd/cucumber-sinatra)
+      $ cucumber-sinatra init --app Hello src/hello.rb
 
-    cucumber-sinatra init --app Hello src/hello.rb
 
-Done! cucumber-sinatra is a gem that do most of the configuration work for us. For more info you can visit [cucumber-sinatra](https://github.com/bernd/cucumber-sinatra)
-
-### Write tests
+### Writing tests
 
 Now we can write our cucumber test, yes, I said test
 
-Inside features directory create a new file called hello.feature
-In this file write something like:
+Inside the features directory create a new file called hello.feature. In this file write something like:
 
-    Feature: Cucumber web testing
-      In Order to verify if my app works
-      As A developer
-      I want to see my home page
-
-      Scenario: View hello page
-        Given I am on the home page
-        Then I should see "It's alive!"
+        Feature: Cucumber web testing
+          In Order to verify if my app works
+          As A developer
+          I want to see my home page
+         
+          Scenario: View hello page
+            Given I am on the home page
+            Then I should see "It's alive!"
 
 Then run the test:
-    cucumber feature/hello.feature
+      $ cucumber feature/hello.feature
 
 ![Red tests](https://github.com/ovargas27/sinatra-green_way/blob/master/sinatra_red_tests.jpg?raw=true)
 
-And... Fail!
-No worry, this is expected. Now we are ready to write code to pass the test.
+And... Fail! But don’t worry, this was expected. Now we are ready to write the code we need to pass the test.
 
-### Write Code
+### Writing Code
 
-This is the moment to write the code to pass the test. Open the file src/hello.rb and edit it to look like the following
+This is the moment to write the code to pass the test. Open the file src/hello.rb and edit it to look like the following:
 
-    require 'sinatra/base'
-
-    class Hello < Sinatra::Base
-      get '/' do
-        "It's alive!"
-      end
-    end
+        require 'sinatra/base'
+    
+        class Hello < Sinatra::Base
+          get '/' do
+            "It's alive!"
+          end
+        end
 
 And run the test again 
-    cucumber feature/hello.feature
+      $ cucumber feature/hello.feature
 
 ![Green tests](https://github.com/ovargas27/sinatra-green_way/blob/master/sinatra_green_tests.jpg?raw=true)
 
-We're green. If you want to see your web application, you can do it with
-    rackup -p 4567
+Now we're green. If you want to see your web application, you can do it with
+      $ rackup -p 4567
 
-Now you can visit it on "localhost:4567/" in your browser
+And you just have to go to "localhost:4567/" in your browser
 
-Congrats for you first Sinatra application in the green way. To celebrate, I left you with [Frank](http://www.youtube.com/watch?v=Aht9hcDFyVw)
+Congrats for your first green way Sinatra application! To celebrate, I’ll leave you with [Frank](http://www.youtube.com/watch?v=Aht9hcDFyVw)
 
 # References
 [Cucumber](http://cukes.info/) Behavior Driven Development tool.
