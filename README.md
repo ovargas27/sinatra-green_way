@@ -1,10 +1,4 @@
----
-layout: post
-titke: BDD with cucumber - Basics
-author: Omar Vargas 
-email: omar@crowdint.com
-avatar: 433031df4018635dfb177f4066c37a3b
----
+# Sinatra: green way.
 
 Sinatra is one of the most popular micro frameworks for ruby,its a easy and
 quickly way to create web applicatios.
