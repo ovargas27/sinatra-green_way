@@ -83,7 +83,7 @@ We're green. If you want to see your web application, you can do it with
 
 Now you can visit it on "localhost:4567/" in your browser
 
-Congrats for you first Sinatra application in the green way.
+Congrats for you first Sinatra application in the green way. To celebrate, I left you with Frank (My way)[http://www.youtube.com/watch?v=Aht9hcDFyVw]
 
 # References
 [Cucumber](http://cukes.info/) Behavior Driven Development tool.
