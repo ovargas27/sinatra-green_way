@@ -36,8 +36,7 @@ the web_steps and so on. Well go ahead
 
     cucumber-sinatra init --app Hello src/hello.rb
 
-Done! cucumber-sinatra is a gem that do most of the configuration work for us. [ for
-more info see github repo page ]
+Done! cucumber-sinatra is a gem that do most of the configuration work for us. For more info you can visit [cucumber-sinatra](https://github.com/bernd/cucumber-sinatra)
 
 ### Write tests
 
