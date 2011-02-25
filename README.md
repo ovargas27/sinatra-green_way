@@ -24,7 +24,7 @@ the example below:
     gem 'capybara'
     gem 'rspec'
 
-> In like to use one gemset per project. If you don't know rmv. What are you waiting for? [quick rvm tutorial](http://blog.crowdint.com/2010/07/28/getting-started-with-rvm.html)
+> I like to use one gemset per project. If you don't know rmv. What are you waiting for? [quick rvm tutorial](http://blog.crowdint.com/2010/07/28/getting-started-with-rvm.html)
 
 Now we can install our gems
     bundle install
@@ -83,7 +83,7 @@ We're green. If you want to see your web application, you can do it with
 
 Now you can visit it on "localhost:4567/" in your browser
 
-Congrats for you first Sinatra application in the green way. To celebrate, I left you with Frank [My way](http://www.youtube.com/watch?v=Aht9hcDFyVw)
+Congrats for you first Sinatra application in the green way. To celebrate, I left you with [Frank](http://www.youtube.com/watch?v=Aht9hcDFyVw)
 
 # References
 [Cucumber](http://cukes.info/) Behavior Driven Development tool.
