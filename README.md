@@ -86,6 +86,9 @@ Now you can visit it on "localhost:4567/" in your browser
 Congrats for you first Sinatra application in the green way.
 
 # References
-[Cucumber](http://cukes.info/)
-[Siantra](http://www.sinatrarb.com/)
-[Cucumber-Sinatra](https://github.com/bernd/cucumber-sinatra)
+[Cucumber](http://cukes.info/) .
+
+[Siantra](http://www.sinatrarb.com/) .
+
+[Cucumber-Sinatra](https://github.com/bernd/cucumber-sinatra) .
+
