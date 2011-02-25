@@ -24,7 +24,7 @@ the example below:
     gem 'capybara'
     gem 'rspec'
 
-> With rvm you can use diferents rubies and gemset for each project. If you don't know rvm. What are you waiting for? [quick rvm tutorial](http://blog.crowdint.com/2010/07/28/getting-started-with-rvm.html)
+> With rvm you can use diferents rubies and gemset for each project. If you don't know rvm. What are you waiting for? [RVM](http://rvm.beginrescueend.com/)
 
 Now we can install our gems
     bundle install
@@ -32,7 +32,7 @@ Now we can install our gems
 > if you doesn't have installed bundle. Install it with
     gem install bundler
 
-Now we need to create or sinatra application, configure cucumber, define the web_steps and so on. Well go ahead
+Now we need to create our sinatra application, configure cucumber, define the web_steps and so on. Well go ahead
 
     cucumber-sinatra init --app Hello src/hello.rb
 
@@ -60,7 +60,7 @@ Then run the test:
 ![Red tests](https://github.com/ovargas27/sinatra-green_way/blob/master/sinatra_red_tests.jpg?raw=true)
 
 And... Fail!
-No worry, this is espected. Now we are ready to write code to pass the test.
+No worry, this is expected. Now we are ready to write code to pass the test.
 
 ### Write Code
 
@@ -71,6 +71,7 @@ This is the moment to write the code to pass the test. Open the file src/hello.r
     class Hello < Sinatra::Base
       get '/' do
         "It's alive!"
+      end
     end
 
 And run the test again 
@@ -79,7 +80,7 @@ And run the test again
 ![Green tests](https://github.com/ovargas27/sinatra-green_way/blob/master/sinatra_green_tests.jpg?raw=true)
 
 We're green. If you want to see your web application, you can do it with
-   rackup -p 4567
+    rackup -p 4567
 
 Now you can visit it on "localhost:4567/" in your browser
 
