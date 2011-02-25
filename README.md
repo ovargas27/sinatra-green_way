@@ -95,7 +95,7 @@ And run the test again
     cucumber feature/hello.feature
 {% endhighlight %}
 
-![Green tests](https://github.com/ovargas27/sinatra-green_way/blob/master/sinatra_green_tests.jpg)
+![Green tests](https://github.com/ovargas27/sinatra-green_way/blob/master/sinatra_green_tests.jpg?raw=true)
 
 We're green. If you want to see your web application, you can do it with
 
