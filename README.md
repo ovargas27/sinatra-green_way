@@ -17,15 +17,13 @@ Then we need create the application's directory called greenway. Navigate to tha
 directory and create a file called Gemfile. Edit this file so its looks like
 the example below:
 
-{% highlight ruby %}
-source 'http://rubygems.org'
-
-gem 'sinatra'
-gem 'cucumber'
-gem 'cucumber-sinatra'
-gem 'capybara'
-jem 'rspec'
-{% endhighlight %}
+    source 'http://rubygems.org'
+    
+    gem 'sinatra'
+    gem 'cucumber'
+    gem 'cucumber-sinatra'
+    gem 'capybara'
+    jem 'rspec'
 
 Now we can install our gems
 {% highlight ruby %}
