@@ -71,7 +71,7 @@ Then run the test:
     cucumber feature/hello.feature
 {% endhighlight %}
 
-![Red tests](https://github.com/ovargas27/sinatra-green_way/blob/master/sinatra_green_tests.jpg)
+![Red tests](https://github.com/ovargas27/sinatra-green_way/blob/master/sinatra_green_tests.jpg?raw=true)
 
 And... Fail!
 No worry, this is espected. Now we are ready to write code to pass the test.
