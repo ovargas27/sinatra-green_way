@@ -1,8 +1,8 @@
 # Sinatra: green way.
 
-Sinatra is one of the most popular micro frameworks for ruby,its a easy and quickly way to create web applicatios.
+Sinatra is one of the most popular micro frameworks for ruby, its a easy and quickly way to create web applications.
 
-Cucumber is an powerful tool to create user stories and accpetance tests
+Cucumber is an powerful tool to create user stories and acceptance tests
 
 Together they are an quickly and efficient way to create web applications.
 
@@ -24,7 +24,7 @@ the example below:
     gem 'capybara'
     gem 'rspec'
 
-> I like to use one gemset per project. If you don't know rmv. What are you waiting for? [quick rvm tutorial](http://blog.crowdint.com/2010/07/28/getting-started-with-rvm.html)
+> With rvm you can use diferents rubies and gemset for each project. If you don't know rvm. What are you waiting for? [quick rvm tutorial](http://blog.crowdint.com/2010/07/28/getting-started-with-rvm.html)
 
 Now we can install our gems
     bundle install
@@ -91,4 +91,6 @@ Congrats for you first Sinatra application in the green way. To celebrate, I lef
 [Siantra](http://www.sinatrarb.com/) a DSL for quickly creating web applications in Ruby.
 
 [Cucumber-Sinatra](https://github.com/bernd/cucumber-sinatra) helpful gem to initialize a cucumber environment for a sinatra application.
+
+[RVM](http://rvm.beginrescueend.com/) Command line tool to easily install, manage and work with multiple ruby environments.
 
