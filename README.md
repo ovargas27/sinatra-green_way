@@ -1,7 +1,6 @@
 # Sinatra: green way.
 
-Sinatra is one of the most popular micro frameworks for ruby,its a easy and
-quickly way to create web applicatios.
+Sinatra is one of the most popular micro frameworks for ruby,its a easy and quickly way to create web applicatios.
 
 Cucumber is an powerful tool to create user stories and accpetance tests
 
@@ -12,7 +11,7 @@ In this post we'll create our first sinatra application in 'outside-in' developm
 ## First Sinatra application.
 
 First of all we need to create an our basic environment.
-I like use one gemset per project [ for rvm an how to use it see 'pancho blog link' ]
+I like use one gemset per project 
 Then we need create the application's directory called greenway. Navigate to that
 directory and create a file called Gemfile. Edit this file so its looks like
 the example below:
@@ -25,14 +24,15 @@ the example below:
     gem 'capybara'
     gem 'rspec'
 
+> In like to use one gemset per project. If you don't know rmv. What are you waiting for? [quick rvm tutorial](http://blog.crowdint.com/2010/07/28/getting-started-with-rvm.html)
+
 Now we can install our gems
     bundle install
 
 > if you doesn't have installed bundle. Install it with
     gem install bundler
 
-Now we need to create or sinatra application, configure cucumber, define
-the web_steps and so on. Well go ahead
+Now we need to create or sinatra application, configure cucumber, define the web_steps and so on. Well go ahead
 
     cucumber-sinatra init --app Hello src/hello.rb
 
@@ -84,3 +84,8 @@ We're green. If you want to see your web application, you can do it with
 Now you can visit it on "localhost:4567/" in your browser
 
 Congrats for you first Sinatra application in the green way.
+
+# References
+[Cucumber](http://cukes.info/)
+[Siantra](http://www.sinatrarb.com/)
+[Cucumber-Sinatra](https://github.com/bernd/cucumber-sinatra)
