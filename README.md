@@ -9,7 +9,7 @@ Together they are an quickly and efficient way to create web applications.
 
 In this post we'll create our first sinatra application in 'outside-in' development with cucumber, I mean, in the green way.
 
-# First Sinatra application.
+## First Sinatra application.
 
 First of all we need to create an our basic environment.
 I like use one gemset per project [ for rvm an how to use it see 'pancho blog link' ]
@@ -39,7 +39,7 @@ the web_steps and so on. Well go ahead
 Done! cucumber-sinatra is a gem that do most of the configuration work for us. [ for
 more info see github repo page ]
 
-## Write tests
+### Write tests
 
 Now we can write our cucumber test, yes, I said test
 
@@ -63,7 +63,7 @@ Then run the test:
 And... Fail!
 No worry, this is espected. Now we are ready to write code to pass the test.
 
-## Write Code
+### Write Code
 
 This is the moment to write the code to pass the test. Open the file src/hello.rb and edit it to look like the following
 
