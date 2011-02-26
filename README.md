@@ -2,15 +2,15 @@
 
 Sinatra is one of the most popular micro frameworks for Ruby, it’s an easy and fast way to create web applications.
 
-On the other side, Cucumber is a powerful tool to create user stories and acceptance tests. Together they are a quickly and efficient way to create web applications.
+On the other hand, Cucumber is a powerful tool to create user stories and acceptance tests. Together they are a quick and efficient way to create web applications.
 
-In this post we'll create our first Sinatra application using 'outside-in' development with Cucumber, I mean, we’ll do it the green way.
+In this post we'll create our first Sinatra application using 'outside-in' development with Cucumber - I mean, we’ll do it the green way.
 
 ## First Sinatra application.
 
-First of we need to create our basic environment. I like to use one gemset per project
+First of all, we need to create our basic environment. I like to use one gemset per project.
 
-Then we need create our application's directory, we’ll call it greenway. Inside the "greenway" directory create a file called Gemfile. Edit this file so it looks like the example below:
+Then we need to create our application's directory.  Let’s call it ‘greenway’. Inside the ‘greenway’ directory, create a file called Gemfile. Edit this file so that it looks like the example below:
 
         source 'http://rubygems.org'
     
@@ -35,7 +35,7 @@ Now we need to create our Sinatra application, set the configuration for Cucumbe
 
 ### Writing tests
 
-Now we can write our cucumber test, yes, I said test
+Now we can write our cucumber test… yes, I said test.
 
 Inside the features directory create a new file called hello.feature. In this file write something like:
 
@@ -53,7 +53,7 @@ Then run the test:
 
 ![Red tests](https://github.com/ovargas27/sinatra-green_way/blob/master/sinatra_red_tests.jpg?raw=true)
 
-And... Fail! But don’t worry, this was expected. Now we are ready to write the code we need to pass the test.
+And... it Fails! But don’t worry, this result was expected. Now we are ready to write the code we need to pass the test.
 
 ### Writing Code
 
@@ -67,17 +67,17 @@ This is the moment to write the code to pass the test. Open the file src/hello.r
           end
         end
 
-And run the test again 
+And now, run the test again
       $ cucumber feature/hello.feature
 
 ![Green tests](https://github.com/ovargas27/sinatra-green_way/blob/master/sinatra_green_tests.jpg?raw=true)
 
-Now we're green. If you want to see your web application, you can do it with
+Now we're green. If you want to see your web application, you can do it with:
       $ rackup -p 4567
 
 And you just have to go to "localhost:4567/" in your browser
 
-Congrats for your first green way Sinatra application! To celebrate, I’ll leave you with [Frank](http://www.youtube.com/watch?v=Aht9hcDFyVw)
+Congrats for your first green way Sinatra application! To celebrate, I’ll leave you with Frank
 
 # References
 [Cucumber](http://cukes.info/) Behavior Driven Development tool.
