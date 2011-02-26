@@ -88,3 +88,4 @@ Congrats for your first green way Sinatra application! To celebrate, I’ll leav
 
 [RVM](http://rvm.beginrescueend.com/) Command line tool to easily install, manage and work with multiple ruby environments.
 
+[Bundler](http://gembundler.com/) a tool that manages gem dependencies for your ruby application.
