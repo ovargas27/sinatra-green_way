@@ -77,7 +77,7 @@ Now we're green. If you want to see your web application, you can do it with:
 
 And you just have to go to "localhost:4567/" in your browser
 
-Congrats for your first green way Sinatra application! To celebrate, I’ll leave you with Frank
+Congrats for your first green way Sinatra application! To celebrate, I’ll leave you with [Frank](http://www.youtube.com/watch?v=Aht9hcDFyVw)
 
 # References
 [Cucumber](http://cukes.info/) Behavior Driven Development tool.
